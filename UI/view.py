@@ -43,7 +43,7 @@ class View:
         # Riga 2
         self.dd_album = ft.Dropdown(label="Album", width=200, on_change=self.controller.get_selected_album)
         self.pulsante_analisi_comp = ft.ElevatedButton(text="Analisi Componente",
-                                                 on_click=self.controller.handle_analisi_comp)
+                                                 on_click=self.controller.handle_analisi_comp, disabled=True)
         row2 = ft.Row([
             ft.Container(self.dd_album, width=200),
             ft.Container(self.pulsante_analisi_comp, width=200)
